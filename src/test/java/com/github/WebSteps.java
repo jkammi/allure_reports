@@ -14,9 +14,6 @@ import static org.openqa.selenium.By.linkText;
 
 public class WebSteps {
 
-    public WebSteps() {
-    }
-
     @Step("Opening the mainpage")
     public void openMainPage() {
         open("https://github.com");
