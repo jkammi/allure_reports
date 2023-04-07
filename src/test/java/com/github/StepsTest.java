@@ -18,7 +18,6 @@ public class StepsTest {
 
     @Test
     public void testLambdaStep() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Opening the mainpage", () -> {
             open("https://github.com");
@@ -41,7 +40,6 @@ public class StepsTest {
 
     @Test
     public void testAnnotatedStep() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps steps = new WebSteps();
         steps.openMainPage();
         steps.searchForRepository(REPOSITORY);
