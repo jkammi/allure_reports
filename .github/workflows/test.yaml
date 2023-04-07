@@ -13,6 +13,6 @@ jobs:
       - uses: actions/setup-java
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
-          java-version: '8'
+          java-version: '1.8'
       # запускаем тесты
       - run: ./gradlew clean test
